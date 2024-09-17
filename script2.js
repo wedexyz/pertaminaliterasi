@@ -19,14 +19,14 @@ output2.innerHTML   = slider2.value;
 slider.oninput = function() {
   output.innerHTML = this.value;
   firebase.database().ref().update({
-    'pompa1' : this.value
+    'pompa1' : parseInt(this.value)
 });
 }
 
 slider2.oninput = function() {
   output2.innerHTML = this.value;
   firebase.database().ref().update({
-    'pompa2' : this.value
+    'pompa2' : parseInt(this.value)
 });
 }
 
