@@ -45,7 +45,7 @@ Highcharts.stockChart('container1', {
        // type: 'line',
         // type: 'areaspline',
         
-         type: 'spline',
+        type: 'spline',
         events: {
             load: function () {
 
@@ -92,7 +92,9 @@ Highcharts.stockChart('container1', {
     },
 
     exporting: {
-        enabled: true
+       // enabled: true
+       enabled: false
+
     },
 
     series: [{
@@ -135,6 +137,7 @@ Highcharts.stockChart('container2', {
 
     accessibility: {
         enabled: false
+        
     },
 
     time: {
@@ -163,7 +166,8 @@ Highcharts.stockChart('container2', {
     },
 
     exporting: {
-        enabled: true
+       // enabled: true
+        enabled: false
     },
    
     series: [{
@@ -241,7 +245,8 @@ Highcharts.stockChart('container3', {
     },
 
     exporting: {
-        enabled: true
+        //enabled: true
+        enabled: false
     },
    
     series: [{
