@@ -1,7 +1,9 @@
 .slidecontainer {
+    width: 90%;
+  }
+  input {
     width: 100%;
   }
-  
   .slider {
     -webkit-appearance: none;
     width: 100%;
