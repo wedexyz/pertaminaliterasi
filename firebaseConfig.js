@@ -10,7 +10,7 @@ const firebaseConfig = {
   };
   
   const app = firebase.initializeApp(firebaseConfig);
-
+/*
   var usersRef = firebase.database().ref('users')
   var auth = null;
   $('#registerForm').on('submit', function (e) {
@@ -123,7 +123,7 @@ function spanText(textStr, textClasses) {
   return '<span class="' + classNames + '">' + textStr + '</span>';
   
 }
-
+*/
 
 
 

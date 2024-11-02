@@ -97,23 +97,30 @@
   <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
     <div class="container-fluid py-1 px-3">
       <nav aria-label="breadcrumb">
-        <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+        <!--
+         <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
           <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
           <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Dashboard</li>
         </ol>
-        <h6 class="font-weight-bolder mb-0">Dashboard</h6>
+           <h6 class="font-weight-bolder mb-0">Dashboard</h6>
+        -->
+       
+     
       </nav>
       <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
         <div class="ms-md-auto pe-md-3 d-flex align-items-center">
           
         </div>
         <ul class="navbar-nav  justify-content-end">
-          <li class="nav-item d-flex align-items-center">
+          <!--
+         
+          <li class="nav-item d-flex align-items-center"  >
             <a href="javascript:;" class="nav-link text-body font-weight-bold px-0">
               <i   data-toggle="modal" data-target="#loginModal"  type ="button" class="fa fa-user me-sm-1  auth-false"></i>
               <span data-toggle="modal" data-target="#loginModal"  type ="button" class="d-sm-inline d-none  auth-false">Sign In</span>
             </a>
           </li>
+          -->
           <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
             <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
               <div class="sidenav-toggler-inner">
@@ -145,65 +152,61 @@
      
     <div class="container-fluid py-1">
       <div class="row">
+
+
+
+
+<!-- DHT-->
+<div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+  <div class="card">
+    <div class="card-body p-3">
+      <div class="row">
+        <div class="col-8">
+          <div class="numbers">
+            <p class="text-sm mb-0 text-capitalize font-weight-bold">Sensor DHT</p>
+            <h5 class="font-weight-bolder mb-0" id="data3">
+            </h5>
+       
+          </div>
+          <span class="text-success text-sm font-weight-bolder" id="data_sensordht"></span><span class="text-success text-sm font-weight-bolder"> &#8451;</span>
+        </div>
+        <div class="col-4 text-end">
+          <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+            <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   <!--  ph -->
         <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
           <div class="card">
             <div class="card-body p-3">
               <div class="row">
-                <div class="col-8">
+                <div class="col-4">
                   <div class="numbers">
               
-                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Sensor PH A</p>
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold"> PH A</p>
                     <h5 class="font-weight-bolder mb-0" >
                     </h5>
                     <span class="text-success text-sm font-weight-bolder"id="data_sensorph" ></span><span class="text-success text-sm font-weight-bolder"> </span>
                   </div>
                 </div>
                 
-                <div class="col-4 text-end">
-                  <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                    <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-          <div class="card">
-            <div class="card-body p-3">
-              <div class="row">
-                <div class="col-8">
+                <div class="col-4">
                   <div class="numbers">
               
-                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Sensor PH B</p>
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold"> PH B</p>
+                  
                     <h5 class="font-weight-bolder mb-0" >
                     </h5>
                     <span class="text-success text-sm font-weight-bolder"id="data_sensorphb" ></span><span class="text-success text-sm font-weight-bolder"> </span>
+                   
                   </div>
                 </div>
-                
-                <div class="col-4 text-end">
-                  <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                    <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-  <!--  tds -->
-        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-          <div class="card">
-            <div class="card-body p-3">
-              <div class="row">
-                <div class="col-8">
-                  <div class="numbers">
-                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Sensor TDS A</p>
-                    <h5 class="font-weight-bolder mb-0" >
-                    </h5> <span class="text-success text-sm font-weight-bolder" id="data_sensortds"></span><span class="text-success text-sm font-weight-bolder"> PPM</span>
-                  </div>
-                </div>
                 <div class="col-4 text-end">
                   <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
                     <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i>
@@ -214,62 +217,60 @@
           </div>
         </div>
 
+        
+
+  <!--  tds a -->
         <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
           <div class="card">
             <div class="card-body p-3">
               <div class="row">
-                <div class="col-8">
+                <div class="col-4">
                   <div class="numbers">
-                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Sensor TDS B</p>
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold"> TDS A</p>
                     <h5 class="font-weight-bolder mb-0" >
-                    </h5> <span class="text-success text-sm font-weight-bolder" id="data_sensortdsb"></span><span class="text-success text-sm font-weight-bolder"> PPM</span>
+                    </h5> <span class="text-success text-sm font-weight-bolder" id="data_sensortds"></span><span class="text-success text-sm font-weight-bolder"> &#13273;</span>
                   </div>
                 </div>
-                <div class="col-4 text-end">
-                  <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                    <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-<!-- DHT-->
-        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-          <div class="card">
-            <div class="card-body p-3">
-              <div class="row">
-                <div class="col-8">
+                <div class="col-4">
                   <div class="numbers">
-                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Sensor DHT</p>
-                    <h5 class="font-weight-bolder mb-0" id="data3">
-                    </h5>
-               
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold"> TDS B</p>
+                    <h5 class="font-weight-bolder mb-0" >
+                    </h5> <span class="text-success text-sm font-weight-bolder" id="data_sensortdsb"></span><span class="text-success text-sm font-weight-bolder"> &#13273;</span>
                   </div>
-                  <span class="text-success text-sm font-weight-bolder" id="data_sensordht"></span><span class="text-success text-sm font-weight-bolder"> Celcius</span>
                 </div>
                 <div class="col-4 text-end">
                   <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
                     <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i>
-                   </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+
 <!-- DS -->
-<div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+  <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
   <div class="card">
     <div class="card-body p-3">
       <div class="row">
-        <div class="col-8">
+        <div class="col-4">
           <div class="numbers">
-            <p class="text-sm mb-0 text-capitalize font-weight-bold">Sensor DS A</p>
+            <p class="text-sm mb-0 text-capitalize font-weight-bold"> DS A</p>
             <h5 class="font-weight-bolder mb-0" >
             </h5>
        
           </div>
-          <span class="text-success text-sm font-weight-bolder" id="data_sensordba"></span><span class="text-success text-sm font-weight-bolder"> Celcius</span>
+          <span class="text-success text-sm font-weight-bolder" id="data_sensordba"></span><span class="text-success text-sm font-weight-bolder"> &#8451;</span>
+        </div>
+        <div class="col-4">
+          <div class="numbers">
+            <p class="text-sm mb-0 text-capitalize font-weight-bold"> DS B</p>
+            <h5 class="font-weight-bolder mb-0" >
+            </h5>
+       
+          </div>
+          <span class="text-success text-sm font-weight-bolder" id="data_sensordbb"></span><span class="text-success text-sm font-weight-bolder"> &#8451;</span>
         </div>
         <div class="col-4 text-end">
           <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
@@ -279,73 +280,126 @@
       </div>
     </div>
   </div>
-</div>
+      </div>
 
 
-<div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-  <div class="card">
-    <div class="card-body p-3">
-      <div class="row">
-        <div class="col-8">
-          <div class="numbers">
-            <p class="text-sm mb-0 text-capitalize font-weight-bold">Sensor DS B</p>
-            <h5 class="font-weight-bolder mb-0" >
-            </h5>
-       
+
+      <!-- pompa seting 1a -->
+      <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+        <div class="card">
+          <div class="card-body p-3">
+            <div class="row">
+              <div class="col-8">
+                <div class="numbers">
+                  <p class="text-sm mb-0 text-capitalize font-weight-bold">Pompa 1 A</p>
+                  <h5 class="font-weight-bolder mb-0" >
+                  </h5>
+             
+                </div>
+                <input id="pompa_input1a" type="text" placeholder="set volume...">
+               
+             
+              </div>
+              <div class="col-4 ">
+                
+                  <span class="text-success text-sm font-weight-bolder" id="data_pompa1"></span><span class="text-success text-sm font-weight-bolder"> Liter</span>
+                  <button class="btn btn-danger text-sm font-weight-bolder"  onclick="set_pompa1a()">Set</button>
+            
+                 
+              </div>
+            </div>
           </div>
-          <span class="text-success text-sm font-weight-bolder" id="data_sensordbb"></span><span class="text-success text-sm font-weight-bolder"> Celcius</span>
-        </div>
-        <div class="col-4 text-end">
-          <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-            <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i>
-           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-
-
+      <!-- pompa seting 2a -->
+      <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+        <div class="card">
+          <div class="card-body p-3">
+            <div class="row">
+              <div class="col-8">
+                <div class="numbers">
+                  <p class="text-sm mb-0 text-capitalize font-weight-bold">Pompa 2 A</p>
+                  <h5 class="font-weight-bolder mb-0" >
+                  </h5>
+                </div>
+                <input id="pompa_input2a" type="text"placeholder="set volume...">
+              </div>
+              <div class="col-4 ">
+                
+                  <span class="text-success text-sm font-weight-bolder" id="data_pompa2"></span><span class="text-success text-sm font-weight-bolder"> Liter</span>
+                  <button class="btn btn-danger text-sm font-weight-bolder"  onclick="set_pompa2a()">Set</button>
+            
+                 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- pompa seting 1b -->
+      <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+        <div class="card">
+          <div class="card-body p-3">
+            <div class="row">
+              <div class="col-8">
+                <div class="numbers">
+                  <p class="text-sm mb-0 text-capitalize font-weight-bold">Pompa 1 B</p>
+                  <h5 class="font-weight-bolder mb-0" >
+                  </h5>
+                </div>
+                <input id="pompa_input1b" type="text" placeholder="set volume...">
+              </div>
+              <div class="col-4 ">
+                  <span class="text-success text-sm font-weight-bolder" id="data_pompa1b"></span><span class="text-success text-sm font-weight-bolder"> Liter</span>
+                  <button class="btn btn-success text-sm font-weight-bolder"  onclick="set_pompa1b()">Set</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- pompa seting 2b -->
+      <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+        <div class="card">
+          <div class="card-body p-3">
+            <div class="row">
+              <div class="col-8">
+                <div class="numbers">
+                  <p class="text-sm mb-0 text-capitalize font-weight-bold">Pompa 2 B</p>
+                  <h5 class="font-weight-bolder mb-0" >
+                  </h5>
+                </div>
+                <input id="pompa_input2b" type="text" placeholder="set volume...">
+              </div>
+              <div class="col-4 ">
+                  <span class="text-success text-sm font-weight-bolder" id="data_pompa2b"></span><span class="text-success text-sm font-weight-bolder"> Liter</span>
+                  <button class="btn btn-success text-sm font-weight-bolder"  onclick="set_pompa2b()">Set</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 
 
       </div>
       <div style="margin: 10px;"></div>
-   
+     <!--tampilan grafik sensor -->
       <div class="row mt-4">
-
-   
-
-
           <div class="col-lg-12 mb-lg-0 mb-4">
             <div class="card z-index-2">
               <div class="card-body p-3">
-                <div  id="container1"   style="height: 300px"></div>
-                <br>
-                <div  id="containerphb"   style="height: 300px"></div>
-                <br>
-                <br>
-                <div  id="container3"   style="height: 300px"></div>
-                <br>
-                <div  id="containertdsb"   style="height: 300px"></div>
-                <br>
-                <div  id="container2"   style="height: 300px"></div>
-                <br>
-                <div  id="containerDSA"   style="height: 300px"></div>
-                <br>
-                <div  id="containerDSB"   style="height: 300px"></div>
-                
-                
-          
+              
+                <div  id="grafik_dht"       style="height: 300px"></div>
+                <div  id="grafik_ph_a"      style="height: 300px"></div>
+                <div  id="grafik_ph_b"     style="height: 300px"></div>       
+                <div  id="grafik_tds_a"     style="height: 300px"></div>            
+                <div  id="grafik_tds_b"    style="height: 300px"></div>
+                <div  id="grafik_DS_a"     style="height: 300px"></div>
+                <div  id="grafik_DS_b"     style="height: 300px"></div>
                 </div>
               </div>
           </div>
-        </div>
-
-       
-        
-   
+      </div>
     </div>
         
       
@@ -368,6 +422,7 @@
 
 <div class="userAuth authenticated ">
 </div>
+<!--
   <main class="authenticated">
    
     <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
@@ -410,23 +465,20 @@
             <div class="row">
               <div class="col-5">
                 <div class="numbers">
-                  <p class="text-sm mb-0 text-capitalize font-weight-bold">Set Pompa 1a</p>
-                  <!-- 
+                
+             
                       <input type="range" min="0" max="100" value="1" class="slider" id="myRange">
                       <p style="display: none;">Value data set: <span id="demo"></span> Liter</p>
                     </div>
 
                  
-                  -->
-                  <div class="slidecontainer">
-                    <input id="pompa_input1a" type="text" placeholder="vol 1a">
-                    <button class="btn btn-success text-sm font-weight-bolder"  onclick="set_pompa1a()">pompa 1a</button>
-                  </div>
+        
+              
                 
                 
                  
                  
-                  <span class="text-success text-sm font-weight-bolder" id="data_pompa1"></span><span class="text-success text-sm font-weight-bolder"> Liter</span>
+                 
                 
                 </div>
               </div>
@@ -435,15 +487,7 @@
                   <p class="text-sm mb-0 text-capitalize font-weight-bold">Set Pompa 2a</p>
                   
                     <div class="slidecontainer">
-                      <input id="pompa_input2a" type="text" placeholder="vol 2a">
-                     
-                      <button class="btn btn-success text-sm font-weight-bolder"  onclick="set_pompa2a()"> pompa 2a</button>
-                    </div>
                   
-                  
-                
-                  
-                  <span class="text-success text-sm font-weight-bolder"  id="data_pompa2"></span><span class="text-success text-sm font-weight-bolder">Liter</span>
                 </div>
               </div>
             </div>
@@ -477,9 +521,6 @@
                       <button class="btn btn-success text-sm font-weight-bolder"  onclick="set_pompa2b()"> pompa 2b</button>
                     </div>
                   
-                  
-                
-                  
                   <span class="text-success text-sm font-weight-bolder"  id="data_pompa2b"></span><span class="text-success text-sm font-weight-bolder">Liter</span>
                 </div>
               </div>
@@ -488,14 +529,14 @@
         </div>
       </div>
       
-  
     </div>
-
-
-
   </main>
 
+-->
+
+
 <!-- Modal Login-->
+ <!--
 <div   class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
   <div class="modal-dialog">
    <div class="modal-content">
@@ -515,18 +556,20 @@
          </div>
        </div>
        <div class="modal-footer">
-             <!--
+     
                  <button type="submit" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">Register</button>
        
   
-             -->
+      
        
-        <button  type="submit" class="btn btn-success" id="doLogin">Login</button>
+             <button  type="submit" class="btn btn-success" id="doLogin">Login</button>
+            </div>
+          </form>
+        </div>
        </div>
-     </form>
-   </div>
-  </div>
-  </div>
+     </div>
+     
+ -->
 
   <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
   <script src="assets/js/plugins/smooth-scrollbar.min.js"></script>
@@ -550,21 +593,19 @@
 <script src="clientjs/bootsratp.min.js"></script>
 
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-   crossorigin=""/>
- <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-   crossorigin=""></script>
+
+
 
 
 
    <script src="https://code.highcharts.com/stock/highstock.js"></script>
-   <script src="https://code.highcharts.com/stock/highcharts-more.js"></script>
-   <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-   <script src="https://code.highcharts.com/highcharts.js"></script>
-   <!---
+
+ 
    
+   <!---
+      <script src="https://code.highcharts.com/stock/highcharts-more.js"></script>
+   <script src="https://code.highcharts.com/highcharts.js"></script>
+     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
    <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
     -->
