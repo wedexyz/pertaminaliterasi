@@ -64,6 +64,9 @@ data_sensordht.on("value", function(snapshot) {
 //edit db a
 data_sensordba.on("value",function(snapshot){
     if (snapshot.val() > 20 && snapshot.val() < 50){document.getElementById('data_sensordba').innerHTML=snapshot.val();}
+    else{
+        document.getElementById('data_sensordba').innerHTML = document.getElementById('data_sensordbb').innerHTML;
+    }
 })
 //edit db b
 data_sensordbb.on("value",function(snapshot){
@@ -513,12 +516,13 @@ Highcharts.stockChart('grafik_DS_a', {
                 // set up the updating of the chart each second
                 const series = this.series[0];
                 setInterval(function () {
-                    data_sensordba.on("value", function(snapshot) {
+                    data_sensordbb.on("value", function(snapshot) {
                     const x = (new Date()).getTime() // current time
                     if (snapshot.val() > 20 && snapshot.val() < 50)
                         { y= snapshot.val()
                             series.addPoint([x, y], true, true);
                         }
+
                    
             });
             },1000);
