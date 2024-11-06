@@ -19,6 +19,18 @@ data_sensortdsb  =  firebase.database().ref('tdsb');
 
 
 
+function set_misting_on(){
+
+    firebase.database().ref().set({
+        'mist' : 20
+    });
+}
+function set_misting_off(){
+
+    firebase.database().ref().set({
+        'mist' : 38
+    });
+}
 
 function set_pompa1a(){
     var pompa1_seta =document.getElementById('pompa_input1a').value;
